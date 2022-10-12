@@ -16,21 +16,21 @@
     <h2> Algorithm state</h2>
     <table id="summary">
         <tr class='header'>
-            <th>Experts: </th>
+            <th>专家: </th>
             <td>Alice</td>
             <td>Bob</td>
             <td>Chadwick</td>
             <td>Eve</td>
         </tr>
         <tr id="cumulativeRewards">
-            <th>Cumulative rewards: </th>
+            <th>累积奖励: </th>
             <td>0</td>
             <td>0</td>
             <td>0</td>
             <td>0</td>
         </tr>
         <tr id="weights">
-            <th>(Normalized) MWUA Weights <span class="tooltip" title="These weights represent the algorithm's internal belief about the quality of each expert. They double as the probability the algorithm will choose to follow an expert in any given round.">(?)</span>:
+            <th>(归一化) MWUA 权重 <span class="tooltip" title="这些权重代表算法对每个专家的质量的置信程度。它们是算法在任何给定回合中选择跟随某个专家的概率。">(?)</span>:
             </th>
             <td></td>
             <td></td>
@@ -38,20 +38,20 @@
             <td></td>
         </tr>
         <tr>
-            <th>Learning rate <span class="tooltip" title="The learning rate dictates how strongly the algorithm favors new data. It must be less than 1/2.">(?)</span>:</th>
+            <th>学习率 <span class="tooltip" title="学习率决定了该算法对探索部分的占比。该值须小于 1/2.">(?)</span>:</th>
             <td><input id="learningRate"></td>
         </tr>
         <tr>
-            <th>MWUA cumulative performance</th>
+            <th>MWUA 累积表现</th>
             <td id="performance"></td>
         </tr>
     </table>
 
     <h2 id="choice">
-        For round <span class="roundNumber">1</span>, I pick: <span id="chosenObject"></span>
+        第 <span class="roundNumber">1</span>轮, 选择: <span id="chosenObject"></span>
     </h2>
 
-    <h2> Rewards <span class="tooltip" title="Choose the rewards of each expert for the next round.">(?)</span></h2>
+    <h2> Rewards <span class="tooltip" title="选择每个专家的奖励，以备下一轮使用。">(?)</span></h2>
     <table id="rewards">
         <tr class='header'>
             <th>Experts:</th>
@@ -69,7 +69,7 @@
         </tr>
     </table>
     <div>
-        <button id="calcBtn">Choose rewards</button>
+        <button id="calcBtn">选择专家</button>
     </div>
 </div>
 <script src="build/main.bundle.js"></script>
