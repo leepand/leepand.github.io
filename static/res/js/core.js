@@ -1,7 +1,7 @@
 "use strict";
 
 // assets 
-var csvSrc = "/static/res/csv/atlas.csv";
+var csvSrc = "static/res/csv/atlas.csv";
 var atlasSrc = "static/res/img/atlas.png";
 
 // game size
